@@ -1,0 +1,76 @@
+body {
+	background-color: #232323; /* black color */
+	margin:0;
+	font-family: "Montserrat","Avenir";
+}
+
+.square { /*it is inside the div of id container. container>square */
+	width: 30%; /* if total width=100 we want 3 squares that occupy 90% */
+	background:purple;
+	padding-bottom: 30%;
+	float: left;
+	margin:1.66%;
+	border-radius: 15%;
+	transition: background 0.6s;
+	-webkit-transition:background 0.6s;/*other browsers*/
+	-moz-transition: background 0.6s; /*for firefox*/
+}
+
+#container {   /*it contains the div of class square inside it. container>square */
+	margin:0 auto; /*top bottom margin=0 and left right margin=centre */
+	max-width: 600px; /*to prevent the squares from occupying full page */
+}
+
+h1 {
+	text-align: center;
+	font-weight: normal;
+	line-height: 1.1;
+	color: white;
+	margin:0; /* to cover the black zones*/
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+#colorDisplay {
+	font-size: 200%; /*200% of h1.h1>span */
+}
+
+#message { /*create space between new game  and easy,hard mode */
+	display: inline-block; /*allows to set height and width to element in this case span */
+	width: 20%;
+ 
+}
+
+
+#stripe {
+	background: white;
+	height: 30px;
+	text-align: center;
+	color: black;
+}
+
+/* toggle the easy and hard button to change colors */
+.selected {
+    background: blue;
+}
+
+button {
+	border:none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%;
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit;
+	transition: all 0.3s; /* which elements(background etc) to add(all in our case) and for how long(2s) in our case*/
+	-webkit-transition: all 0.3s; 
+	-moz-transition: all 0.3s; 
+	outline: none;
+}
+
+button:hover{
+	color: white;
+	background:steelblue;
+}
+
